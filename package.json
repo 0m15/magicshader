@@ -6,7 +6,7 @@
   "main": "dist/magicshader.js",
   "module": "dist/magicshader.mjs",
   "scripts": {
-    "build": "microbundle -f modern",
+    "build": "microbundle",
     "dev": "microbundle watch",
     "example": "parcel example/index.html"
   },
