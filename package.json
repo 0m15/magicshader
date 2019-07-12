@@ -2,9 +2,13 @@
   "name": "magicshader",
   "version": "0.1.2",
   "description": "🔮 Tiny helper for three.js to debug and write shaders",
-  "main": "index.js",
+  "source": "src/index.js",
+  "main": "dist/magicshader.js",
+  "module": "dist/magicshader.mjs",
   "scripts": {
-    "dev": "parcel example/index.html"
+    "build": "microbundle -f modern",
+    "dev": "microbundle watch",
+    "example": "parcel example/index.html"
   },
   "repository": {
     "type": "git",
@@ -18,9 +22,10 @@
   "homepage": "https://github.com/luruke/magicshader#readme",
   "dependencies": {
     "dat.gui": "^0.7.6",
-    "three": "^0.103.0"
+    "three": "^0.106.2"
   },
   "devDependencies": {
+    "microbundle": "^0.11.0",
     "parcel": "^1.12.3"
   }
 }

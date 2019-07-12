@@ -2,7 +2,7 @@ import { RawShaderMaterial, Color } from 'three';
 import * as dat from 'dat.gui';
 
 const magicUniformsToThree = uniforms => {
-  const r = {};
+  const r = {}
 
   for (const k in uniforms) {
     const uniform = uniforms[k];

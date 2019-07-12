@@ -7,7 +7,7 @@ import {
   RawShaderMaterial,
 } from 'three';
 
-import MagicShader from '../index';
+import MagicShader from '../dist/magicshader';
 
 const renderer = new WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
